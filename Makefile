@@ -5,13 +5,14 @@
 ## Login   <baptiste@epitech.net>
 ## 
 ## Started on  Wed May 11 17:39:05 2016 
-## Last update Wed Jun 22 20:46:35 2016 
+## Last update Wed Jun 22 20:55:18 2016 
 ##
 
 
-NAME	=	Playfai
+NAME	=	Playfai 
 
-SRC	=	main.c
+SRC	=	main.c \
+		display.c
 
 INC_DIR	=	include
 
