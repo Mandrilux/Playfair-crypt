@@ -14,44 +14,6 @@ typedef struct          s_data
   int		flag;
 }                       t_data;
 
-
-
-
-
-
-
-
-char		 *my_strdup(char *src);
-
-
-
-
-
-
-
-
-char		 *my_strdup(char *src);
-
-
-
-
-
-
-
-
-char		 *my_strdup(char *src);
-
-
-
-
-
-
-
-
-
-
-char		 *my_strdup(char *src);
-
 		/* free.c */
 
 int		 free_end(t_data *data);
