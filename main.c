@@ -2,8 +2,12 @@
 
 int	main()
 {
-  char	*stread = NULL;
-  char	*tmp = NULL;
+  char		*stread = NULL;
+  char		*tmp = NULL;
+  t_data	*data;
+
+  if ((data = init_data()) == NULL)
+    return (error_memory());
   do
     {
       if ((stread = malloc(sizeof(char) * 26)) == NULL)
