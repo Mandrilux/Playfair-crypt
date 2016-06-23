@@ -10,6 +10,7 @@ int	is_correct_str(char *str)
       else if (str[i] >= 'A' && str[i] <= 'Z');
       else
 	{
+	  printf("Error !! \n");
 	  printf("char ['%c'] is invalid\n", str[i]);
 	  return (0);
 	}

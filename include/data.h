@@ -5,6 +5,8 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <unistd.h>
+#include "get_next_line.h"
 
 		/* check.c */
 
