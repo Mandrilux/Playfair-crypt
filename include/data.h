@@ -14,6 +14,24 @@ typedef struct          s_data
   int		flag;
 }                       t_data;
 
+
+
+
+
+
+
+
+char		 *my_strdup(char *src);
+
+
+
+
+
+
+
+
+char		 *my_strdup(char *src);
+
 		/* check.c */
 
 int		 is_correct_str(char *str);
@@ -33,5 +51,7 @@ char		 *my_strdup(char *src);
 		/* main.c */
 
 int		 main();
+int		 str_without_duplicate(t_data *data);
+int		 is_char_is_here(char *str, int c);
 
 #endif /* DATA_H_ */

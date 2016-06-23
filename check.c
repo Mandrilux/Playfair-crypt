@@ -19,3 +19,17 @@ int	is_correct_str(char *str)
     }
   return (1);
 }
+
+int     is_char_is_here(char *str, int c)
+{
+  int   i = -1;
+
+  while(str[++i] != '\0')
+    {
+      if (str[i] == c)
+	{
+	  return (1);
+	}
+    }
+  return (0);
+}

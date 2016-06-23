@@ -2,7 +2,6 @@
 
 int	main()
 {
-  char		*stread = NULL;
   char		*tmp = NULL;
   t_data	*data;
 
@@ -10,16 +9,29 @@ int	main()
     return (error_memory());
   do
     {
-      if ((stread = malloc(sizeof(char) * 26)) == NULL)
-	return (error_memory());
-      memset(stread, '\0', 26);
+      memset(data->read_str, '\0', 26);
       printf("Entrez une chaine de caractere\n");
       printf("Attention 25 caractere maximum\n");
       tmp = get_next_line(0);
-      strncat(stread, tmp, 25);
+      strncat(data->read_str, tmp, 25);
       free(tmp);
     }
-  while (is_correct_str(stread) == 0);
-
+  while (is_correct_str(data->read_str) == 0);
+  str_without_duplicate(data);
+  printf("str = ['%s']\n", data->str_less_doubl);
   return (EXIT_SUCCESS);
+}
+
+int	str_without_duplicate(t_data *data)
+{
+  int	i = -1;
+  while (data->read_str[++i] != '\0')
+    {
+      if (is_char_is_here(data->str_less_doubl, data->read_str[i]) == 0)
+	{
+	  data->str_less_doubl[data->flag] = data->read_str[i];
+	  data->flag += 1;
+	}
+    }
+  return (1);
 }
