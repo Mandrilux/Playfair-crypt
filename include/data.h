@@ -1,4 +1,3 @@
-
 #ifndef DATA_H_
 #define DATA_H_
 
@@ -7,6 +6,13 @@
 #include <stdio.h>
 #include <unistd.h>
 #include "get_next_line.h"
+
+typedef struct          s_data
+{
+  char		*read_str;
+  char		*str_less_doubl;
+
+}                       t_data;
 
 		/* check.c */
 

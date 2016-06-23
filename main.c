@@ -14,8 +14,8 @@ int	main()
       tmp = get_next_line(0);
       strncat(stread, tmp, 25);
       free(tmp);
-      /* scanf("%25s", stread) */
     }
   while (is_correct_str(stread) == 0);
+
   return (EXIT_SUCCESS);
 }
