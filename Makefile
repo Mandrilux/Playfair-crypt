@@ -24,7 +24,7 @@ all	:	$(NAME)
 
 $(NAME)	:	$(OBJ)
 		@$(CC) $(CFLAGS) -o $(NAME) $(OBJ) $(LDFLAGS)
-		@$(ECHO) '\033[0;32m> gen Compiled\033[0m'
+		@$(ECHO) '\033[0;32m> Playfai Compiled\033[0m'
 
 clean	:
 		-@$(RM) $(OBJ)
