@@ -3,7 +3,6 @@
 int	main()
 {
   char *stread = NULL;
-  int	flag = 0;
   do
     {
       if ((stread = malloc(sizeof(char) * 26)) == NULL)
@@ -12,8 +11,7 @@ int	main()
       printf("Entrez une chaine de caractere\n");
       printf("Attention 25 caractere maximum\n");
       scanf("%25s", stread);
-      flag = is_correct_str(stread);
     }
-  while (flag == 0);
+  while (is_correct_str(stread) == 0);
   return (EXIT_SUCCESS);
 }
