@@ -1,13 +1,3 @@
-/*
-** get_line.c for  in /home/baptiste/project/generator_h
-**
-** Made by
-** Login   <baptiste@epitech.net>
-**
-** Started on  Mon May 16 11:29:12 2016
-** Last update Wed Jun  8 10:31:10 2016 
-*/
-
 #include "data.h"
 
 char    *my_strdup(char *src)

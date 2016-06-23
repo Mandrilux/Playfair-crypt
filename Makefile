@@ -1,14 +1,3 @@
-##
-## Makefile for  in /home/baptiste/rendu/CPE_colle_semaine3
-## 
-## Made by 
-## Login   <baptiste@epitech.net>
-## 
-## Started on  Wed May 11 17:39:05 2016 
-## Last update Thu Jun 23 21:32:16 2016 
-##
-
-
 NAME	=	Playfai 
 
 SRC	=	main.c \
