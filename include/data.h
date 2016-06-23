@@ -32,9 +32,34 @@ char		 *my_strdup(char *src);
 
 char		 *my_strdup(char *src);
 
+
+
+
+
+
+
+
+char		 *my_strdup(char *src);
+
+
+
+
+
+
+
+
+
+
+char		 *my_strdup(char *src);
+
+		/* free.c */
+
+int		 free_end(t_data *data);
+
 		/* check.c */
 
 int		 is_correct_str(char *str);
+int		 is_char_is_here(char *str, int c);
 
 		/* init.c */
 
@@ -51,7 +76,7 @@ char		 *my_strdup(char *src);
 		/* main.c */
 
 int		 main();
+int		 add_last_char(t_data *data);
 int		 str_without_duplicate(t_data *data);
-int		 is_char_is_here(char *str, int c);
 
 #endif /* DATA_H_ */

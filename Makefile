@@ -4,7 +4,8 @@ SRC	=	main.c \
 		display.c \
 		check.c \
 		get_line.c \
-		init.c
+		init.c \
+		free.c
 
 INC_DIR	=	include
 

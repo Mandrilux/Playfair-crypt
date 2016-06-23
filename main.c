@@ -19,7 +19,32 @@ int	main()
   while (is_correct_str(data->read_str) == 0);
   str_without_duplicate(data);
   printf("str = ['%s']\n", data->str_less_doubl);
+  add_last_char(data);
+  printf("str = ['%s']\n", data->str_less_doubl);
   return (EXIT_SUCCESS);
+}
+
+int	add_last_char(t_data *data)
+{
+  char	*tmp;
+  int	i = -1;
+
+  if ((tmp = my_strdup("abcdefghijklmnopqrstuvwxyz")) == NULL)
+    return (-1);
+  /* printf("flag = %d\n", data->flag); */
+  while (tmp[++i] != '\0')
+    {
+      if (data->flag <= 25)
+	{
+	  if (is_char_is_here(data->str_less_doubl, tmp[i]) == 0)
+	    {
+	      data->str_less_doubl[data->flag] = tmp[i];
+	      data->flag += 1;
+	    }
+	}
+    }
+  free(tmp);
+  return (1);
 }
 
 int	str_without_duplicate(t_data *data)
